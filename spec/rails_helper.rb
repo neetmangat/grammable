@@ -11,6 +11,7 @@ require 'rspec/rails'
 RSpec.configure do |config|
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::ControllerHelpers, type: :view
+  include ActionDispatch::TestProcess
 end
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
