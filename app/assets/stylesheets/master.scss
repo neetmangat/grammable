@@ -34,6 +34,21 @@ body {
     margin: 20px;
 }
 
+.comment {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.comment_handle {
+    color: #125688;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.comments {
+    padding: 20px;
+}
+
 //.gram-actions a {
 //    font-weight: bold;
 //    font-size: 16px;
@@ -63,7 +78,7 @@ input {
     line-height: 44px;
 }
 
-.my-btn, my-btn:hover {
+.my-btn, .my-btn:hover {
     background-color: #125688;
     width: 100%;
     border: none;
@@ -72,16 +87,16 @@ input {
     margin-top: 10px;
     text-decoration: none;
     border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .my-btn2, .my-btn2:hover {
     background-color: #125688;
-    width: 30px;
     border: none;
     border-radius: 5px;
     font-size: 15px;
     color: white;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
 }
 
