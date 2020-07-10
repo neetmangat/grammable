@@ -1,2 +1,14 @@
-<br />
-<%= @gram.message %>
+<div class="col-1 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 card form">
+    <h2>Edit Gram</h2>
+    <br />
+    <%= image_tag @gram.picture.url %>
+    <br />
+    <%= @gram.message %>
+</div>
+
+<div class="col-1 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 card form">
+    <%= simple_form_for @gram do |f| %>
+        <%= f.input :message %>
+        <%= f.submit "Update", class: 'my-btn' %>
+    <% end %>
+</div>
