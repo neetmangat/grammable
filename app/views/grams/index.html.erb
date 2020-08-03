@@ -5,7 +5,7 @@
         <div class="card">
             <div class="handle"><%= gram.user.email %></div>
             <%= link_to gram_path(gram) do %>
-                <%= image_tag gram.picture.url, class: 'img-fluid' %>
+                <div class="imgdiv"><%= image_tag gram.picture.url, class: 'img-fluid' %></div>
             <% end %>
             <p>
                 <%= gram.message %>
@@ -41,7 +41,7 @@
 
                 <h4>Add a comment</h4>
                 <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
-                    <%= f.input :message, label: false %>
+                    <%= f.input :message, placeholder: "add a comment...", label: false %>
                     <%= f.submit 'Add Comment', class: 'my-btn' %>
                 <% end %>
             </div>
